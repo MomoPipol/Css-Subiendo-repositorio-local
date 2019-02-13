@@ -1,0 +1,111 @@
+body {
+  background: #02010a;
+  font-family: 'Dancing Script';
+}
+
+.contenido {
+  max-width: 900px;
+	alignment-adjust: central;
+}
+
+header {
+  background-color: #5b7989;
+  text-align: left;
+  color: white;
+  text-shadow: 2px 2px 2px #02010a;
+  border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  display: flex;
+  flex-direction:row;
+  animation: slidein 2s;
+}
+
+@-webkit-keyframes slidein {
+
+0%{margin-top: 150%;}
+60%{margin-top: -5%;}
+100%{margin-top: 0%;}
+
+}
+
+.titulo {
+  width: 50%;
+  margin-left: 20px;
+}
+
+.menu {
+  width: 50%;
+  text-align: right;
+  margin-top: 30px;
+}
+nav a {
+  color: white;
+  font-size: 1.5em;
+  text-align: right;
+}
+
+#Retratos {
+text-decoration: none;
+}
+
+.Galería {
+  background: #d5c75f;
+  border: 1px;
+}
+.Bloque1, .Bloque2{
+display: flex;
+flex-direction: row;
+width: 100%;
+text-align: center;
+}
+.Bloque1 img, .Bloque2 img{
+width: 30%;
+height: 25%;
+margin: 1.5%;
+}
+.Galería img {
+  box-shadow: 2px 2px #02010a;
+}
+#filtro1{
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+#filtro2{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+#filtro3{
+  -webkit-filter: grayscale(80%);
+  filter: sepia(90%);
+}
+
+#filtro4{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+#filtro6{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+footer {
+  font-family: 'Dancing Script', cursive;
+  background: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+  display:flex;
+  width: 100%;
+  flex-flow: row wrap;
+}
+img.icono {
+  width: 15%;
+  height: 15%;
+vertical-align: text-top;
+}
+
+footer div{
+width:25%;
+}

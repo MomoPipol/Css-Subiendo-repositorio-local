@@ -1,0 +1,146 @@
+body {
+  background: #02010a;
+  font-family: 'Dancing Script';
+}
+
+.contenido {
+  max-width: 900px;
+	alignment-adjust: central;
+}
+
+header {
+  background-color: #5b7989;
+  text-align: left;
+  color: white;
+  text-shadow: 2px 2px 2px #02010a;
+  border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  display: flex;
+  flex-direction:row;
+  animation: slidein 2s;
+}
+
+@-webkit-keyframes slidein {
+
+0%{margin-top: 150%;}
+60%{margin-top: -5%;}
+100%{margin-top: 0%;}
+
+}
+
+
+
+#IMG_central {
+  display: block;
+  margin: auto;
+  height: 50%;
+  width:80%;
+}
+
+#IMG_izq {
+  display: block;
+  margin: auto;
+  height: 100%;
+  width:100%;
+}
+
+#IMG_Derecha {
+  display: block;
+  margin: auto;
+  height: 100%;
+  width:100%;
+}
+
+.titulo {
+  width: 50%;
+  margin-left: 20px;
+}
+
+.menu {
+  width: 50%;
+  text-align: right;
+  margin-top: 30px;
+}
+nav a {
+  color: white;
+  font-size: 1.5em;
+  text-align: right;
+}
+
+#index {
+text-decoration: none;
+}
+
+.Contenedor2 a {
+  color: #02010a;
+  font-size: 1.5em;
+}
+.Contenedor1 {
+  padding: 14px;
+  background:#82c3a6;
+}
+.Contenedor1 img {
+  box-shadow: 2px 2px #02010a;
+}
+
+.Contenedor2 {
+  background: #d5c75f;
+  border: 1px;
+  display: flex;
+  flex-direction:row;
+}
+.Contenedor2 img {
+  box-shadow: 2px 2px #02010a;
+}
+figcaption {
+  text-align: center ;
+}
+  .IMG_izq {
+  width: 50%;
+  height: 50%;
+  margin-left: 20px;
+
+}
+.IMG_izq img:hover {
+  transform: rotate(10deg);
+  box-shadow: 2px 2px #82c3a6;
+
+
+}
+
+.IMG_Derecha {
+  width: 50%;
+  height: 50%;
+  margin-right: 20px;
+  box-shadow: #82c3a6;
+}
+
+.IMG_Derecha img:hover {
+  transform:translate(20px,-5px);
+  box-shadow: 2px 2px #82c3a6;
+}
+
+footer {
+  font-family: 'Dancing Script', cursive;
+  background: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+  display:flex;
+  width: 100%;
+  flex-flow: row wrap;
+}
+img.icono {
+  width: 15%;
+  height: 15%;
+vertical-align: text-top;
+}
+
+footer div{
+width:25%;
+}
+
+@media screen and (max-width 899px){
+.contenido {
+    background: white;
+  }
+}
