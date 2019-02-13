@@ -8,16 +8,7 @@ body {
   max-width: 900px;
 	alignment-adjust: central;
 }
-@media screen and (min-width: 900px) {
-.contenido {
-width: 900px;
-}
-}
 
-@media screen and (max-width: 899px) {
-.contenido {
-width: 100%;
-}
 header {
   background-color: #5b7989;
   text-align: left;
@@ -149,8 +140,13 @@ footer div{
 width:25%;
 }
 
-@media screen and (max-width 899px){
+@media screen and (min-width: 900px) {
 .contenido {
-    background: white;
-  }
+width: 900px;
+}
+}
+
+@media screen and (max-width: 899px) {
+.contenido {
+width: 100%;
 }
