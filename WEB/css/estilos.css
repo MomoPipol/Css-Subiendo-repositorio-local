@@ -10,7 +10,6 @@ body {
 
 header {
   background-color: #5b7989;
-  text-align: left;
   color: white;
   text-shadow: 2px 2px 2px #02010a;
   border-radius: 10px 10px 0px 0px;
@@ -34,33 +33,32 @@ header {
 #IMG_central {
   display: block;
   margin: auto;
-  height: 50%;
-  width:80%;
+  max-width: 100%;
+  height: auto;
 }
 
 #IMG_izq {
   display: block;
   margin: auto;
-  height: 100%;
-  width:100%;
+  max-width: 100%;
+  height: auto;
 }
 
 #IMG_Derecha {
   display: block;
   margin: auto;
-  height: 100%;
-  width:100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .titulo {
-  width: 50%;
-  margin-left: 20px;
+float: left;
 }
 
 .menu {
-  width: 50%;
-  text-align: right;
-  margin-top: 30px;
+  float: right;
+  margin-top: auto;
+  margin-left: auto;
 }
 nav a {
   color: white;
@@ -139,8 +137,57 @@ footer div{
 width:25%;
 }
 
-@media screen and (max-width 899px){
+footer h2 .link {
+color: #02010a;
+text-decoration: none;
+}
+
+@media only screen and (min-width: 900px) {
 .contenido {
-    background: white;
+width: 900px;
+}
+}
+/*  Punto de quiebre Diseño Adaptativo */
+@media only   screen and (max-width: 899px) {
+
+  .contenido {
+  width: 100%;
+  background: white;
   }
+  .titulo {
+
+  width: 56%;
+  margin-left: 65px;
+  font-size: 26px;
+  }
+  .menu {
+  width: 50%;
+  text-align: center;
+  margin-top: 80px;
+  margin-left: -63%;
+  display: inline-flex;
+  }
+  nav a {
+  color: white;
+  font-size: 1.5em;
+  text-align: right;
+  padding: 10px;
+  }
+
+  .Contenedor2 {display: flex;
+  flex-direction: column;
+  }
+  .IMG_Derecha, .IMG_izq{
+    margin: auto;
+    width: 100%;
+  }
+
+footer {display: flex;
+flex-direction: column;
+}
+footer div {
+  margin-top: 2%;
+  margin-left: 23%;
+  width: 100%;
+}
 }
