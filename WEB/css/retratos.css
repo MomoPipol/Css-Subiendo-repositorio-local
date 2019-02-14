@@ -109,7 +109,19 @@ vertical-align: text-top;
 footer div{
 width:25%;
 }
+  
+footer h2 .link {
+color: #02010a;
+text-decoration: none;
+}
 
+
+@media only screen and (min-width: 900px) {
+.contenido {
+width: 900px;
+}
+}
+/*  Punto de quiebre Diseño Adaptativo */
 @media only   screen and (max-width: 899px) {
 
   .contenido {

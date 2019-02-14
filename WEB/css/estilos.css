@@ -137,12 +137,17 @@ footer div{
 width:25%;
 }
 
+footer h2 .link {
+color: #02010a;
+text-decoration: none;
+}
+
 @media only screen and (min-width: 900px) {
 .contenido {
 width: 900px;
 }
 }
-
+/*  Punto de quiebre Diseño Adaptativo */
 @media only   screen and (max-width: 899px) {
 
   .contenido {
@@ -150,6 +155,7 @@ width: 900px;
   background: white;
   }
   .titulo {
+
   width: 56%;
   margin-left: 65px;
   font-size: 26px;
@@ -168,7 +174,6 @@ width: 900px;
   padding: 10px;
   }
 
-
   .Contenedor2 {display: flex;
   flex-direction: column;
   }
@@ -185,51 +190,4 @@ footer div {
   margin-left: 23%;
   width: 100%;
 }
-}
-
-/*.contenido {
-width: 100%;
-}
-
- header {
-  display: flex;
-  flex-direction: column;
-}
-
-header .titulo {
-  text-align: center;}
-}
-
-footer {display: flex;
-flex-direction: column;
-justify-content: center;
-margin-left: 15%;
-}
-
-footer {display: flex;
-flex-direction: column;
-justify-content: center;
-margin-left: 15%;
-}
-
-}
-  /*[class*="Contenido"] {
-     width: 100%;
-   }
-  }
-  */
-/*
-header .menu {display:block;
-background: blue}
-
-.Contenedor2 {
-  display: flex;
-  flex-direction: column;
-  width:100%;
-}
-
-
-footer {
-  display: flex;
-  flex-direction: column;
 }
